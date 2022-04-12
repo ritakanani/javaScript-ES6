@@ -44,3 +44,17 @@ var capitalizeCaseLetter = upperCaseFirstChar + restOfChar;
 console.log(capitalizeCaseLetter);  // Rita
 
 
+/*************************************************/
+
+// Modulo(%) - The remainder operator (%) returns the remainder left over when one operand is divided by a second operand. It always takes the sign of the dividend.
+
+var remainderNum = 6 % 4;
+console.log(remainderNum);    // 2 
+// 4 x 1 = 4 so 2 are left in 6 - output become 2.
+
+remainderNum = 45 % 2;
+console.log(remainderNum); // 1
+// 22 x 2 = 44 so 1 is left in 45 - output become 1.
+
+
+
