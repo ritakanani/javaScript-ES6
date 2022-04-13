@@ -99,6 +99,8 @@ function getMilk(money) {
 
 getMilk(5);
 
+
+// How many days, weeks and months are left according to my age in total 90 years.
 function lifeInWeeks(age) {
   let oldAgeLeft = (90 - age);   
   let days = (oldAgeLeft * 365);
@@ -109,3 +111,11 @@ function lifeInWeeks(age) {
 }
 
 lifeInWeeks(42);
+
+// What is your BMI
+function bmiCalculator(weight, height) {
+  var bmi = Math.round(weight / Math.pow(height, 2));
+  return bmi;    
+}
+
+console.log(bmiCalculator(70, 1.55));
