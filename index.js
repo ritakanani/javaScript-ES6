@@ -57,4 +57,13 @@ console.log(remainderNum); // 1
 // 22 x 2 = 44 so 1 is left in 45 - output become 1.
 
 
+/****************************************************/
+
+// Increment and Decrement Expressions
+var x = 3;
+var y = x++;
+console.log(y);  // 3
+y += 1;
+
+console.log(y);  // 4
 
