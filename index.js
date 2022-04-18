@@ -119,3 +119,10 @@ function bmiCalculator(weight, height) {
 }
 
 console.log(bmiCalculator(70, 1.55));
+
+// Random Number Generation. Dice has 6 rolls
+let randomNum = Math.random();
+    randomNum = randomNum * 6;  // whetever number we require, multiply it 
+    randomNum = Math.floor(randomNum) + 1;
+
+console.log(randomNum);  // outputs between 1-6
