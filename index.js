@@ -117,8 +117,8 @@ function bmiCalculator(weight, height) {
   var bmi = Math.round(weight / Math.pow(height, 2));
   return bmi;    
 }
-
 console.log(bmiCalculator(70, 1.55));
+
 
 // Random Number Generation. Dice has 6 rolls
 let randomNum = Math.random();
@@ -126,3 +126,45 @@ let randomNum = Math.random();
     randomNum = Math.floor(randomNum) + 1;
 
 console.log(randomNum);  // outputs between 1-6
+
+
+/*****************************************************/
+
+// Array
+
+var output = [];
+var count = 1;
+
+function fizzBuzz() {
+  if (count % 3 === 0 && count % 5 === 0) {
+    output.push("FizzBuzz");
+  } else if (count % 3 === 0) {
+    output.push("Fizz");
+  } else if (count % 5 === 0) {
+    output.push("Buzz");
+  } else {
+    output.push(count); 
+  }
+  count++;
+  console.log(output) ;
+}
+
+fizzBuzz(); // run in node REPL
+
+
+
+// Who's Buying Lunch?
+// A function which will select a random name from a list of names.
+var names = ["Rita", "Ben", "Jenny", "Michael", "Chloe"];
+
+function whosPaying(names) {
+  var namesLength = names.length;  // 5
+  var randomPersonPosition = Math.floor(Math.random() * namesLength);
+  console.log(randomPersonPosition);  // 0-4.9999999999 without Math.floor
+  // randomPersonPosition = Math.floor(randomPersonPosition);
+  var randomPerson = names[randomPersonPosition];
+
+  return randomPerson + " is going to buy lunch today!";
+}
+console.log(whosPaying(names));
+
