@@ -168,3 +168,30 @@ function whosPaying(names) {
 }
 console.log(whosPaying(names));
 
+
+/*****************************************************/
+
+// For loop
+
+// var count = 1;
+
+function fizzBuzz() {
+  var outputResults = [];
+
+  for(var count = 1; count <= 100; count++) {
+    if (count % 3 === 0 && count % 5 === 0) {
+      outputResults.push("FizzBuzz");
+    } else if (count % 3 === 0) {
+      outputResults.push("Fizz");
+    } else if (count % 5 === 0) {
+      outputResults.push("Buzz");
+    } else {
+      outputResults.push(count); 
+    }
+  }
+  // count++;
+  return outputResults ;
+}
+
+console.log(fizzBuzz()); 
+
