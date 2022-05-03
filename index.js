@@ -174,7 +174,6 @@ console.log(whosPaying(names));
 // For loop
 
 // var count = 1;
-
 function fizzBuzz() {
   var outputResults = [];
 
@@ -194,4 +193,28 @@ function fizzBuzz() {
 }
 
 console.log(fizzBuzz()); 
+
+
+// Fibonacci Code Challenge
+// In fibonacciGenerator function, n represent the number which return the array where every number is the sum of the two previous ones. 
+function fibonacciGenerator(n) {
+  
+  let result = [];  
+  if (n === 1) {
+    result = [0];
+  } else if (n === 2) {
+    result = [0, 1];
+  } else {
+    result = [0, 1];
+
+    for (let i = 2; i < n; i++) {
+      result.push(result[result.length - 2] + result[result.length - 1]); 
+    }
+  }
+  
+  return result;
+}
+
+console.log(fibonacciGenerator(5));
+
 
